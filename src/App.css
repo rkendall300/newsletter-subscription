@@ -1,0 +1,207 @@
+/* Setting custom fonts and weights */
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url(../../assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url(../../assets/fonts/Roboto-Regular.ttf);
+}
+
+/* Default all elements to regular */
+* {
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+}
+
+/* Home page design */
+main {
+  height: 100vh;
+  width: 100%;
+  background-color: #242742;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  background-color: white;
+  width: 900px;
+  height: 600px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem;
+}
+
+#info {
+  flex: 1;
+  padding: 2rem;
+}
+
+#title {
+  font-family: 'Roboto-Bold';
+  font-size: 50px;
+  margin: 25px 0;
+}
+
+#join {
+  margin: 15px 0;
+}
+
+#fm-image-container {
+  flex: 1;
+  background-image: url("./images/illustration-sign-up-desktop.svg");
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  gap: 1rem;
+}
+
+.bullet {
+  margin: 9px;
+}
+
+#labels {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 10px 0;
+}
+
+#small-email {
+  font-size: 12px;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px hsl(231, 7%, 60%) solid;
+}
+
+.hide {
+  display: none;
+}
+
+.error-message {
+  display: block;
+  color: #ff6257;
+  font-size: 12px;
+}
+
+.error-input {
+  color: #ff6257;
+  background-color: #ff625740;
+  border: 1px #ff6257 solid;
+}
+
+/* both subscribe and dismiss buttons share styling */
+.subscribe {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #242742;
+  color: white;
+  font-family: 'Roboto-Bold';
+  cursor: pointer;
+  border: 0;
+}
+
+.subscribe:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+
+/* Confirmation page design */
+span {
+  font-family: 'Roboto-Bold';
+}
+
+#success-container {
+  background-color: white;
+  padding: 40px 60px;
+  border-radius: 20px;
+  width: 500px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+#thanks {
+  font-family: 'Roboto-Bold';
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+#confirm-text {
+  height: 70px;
+  margin: 20px 0;
+}
+
+#pmail {
+  font-family: 'Roboto-Bold';
+  display: inline;
+}
+
+/* Mobile styling */
+@media screen and (max-width: 750px) {
+  /* Homepage styling */
+  #card {
+    width: 100%;
+    height: 100%;
+    flex-direction: column-reverse;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  #fm-image-container {
+    flex: 1;
+    background-image: url("./images/illustration-sign-up-mobile.svg");
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  #info {
+    flex: 2;
+  }
+
+  #title {
+    font-size: 40px;
+  }
+
+  /* Confirmation page styling */
+  #success-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding: 10%;
+  }
+
+  #success-image-container {
+    margin-top: 30%;
+  }
+
+  #thanks {
+    font-size: 40px;
+  }
+
+  #dismiss {
+    margin-top: auto;
+  }
+}
