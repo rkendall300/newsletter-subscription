@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./newsletter/desktop_design.PNG)
+![](./desktop_design.PNG)
 
 ### Links
 
