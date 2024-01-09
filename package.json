@@ -1,7 +1,7 @@
 {
   "name": "newsletter",
   "version": "0.1.0",
-  "homepage": "https://eyon24.github.io/news-subscription-fm",
+  "homepage": "https://rkendall300.github.io/newsletter-subscription",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
